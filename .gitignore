@@ -1,0 +1,25 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+
+.env
+backend/data/
+
+
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+.DS_Store
+
+# Trained models (rebuilt automatically on first start)
+backend/app/ml/artifacts/*.joblib
+backend/app/ml/artifacts/xgboost.json
+backend/app/ml/artifacts/metadata.json
+
+.claude
+.git
+CLAUDE.md

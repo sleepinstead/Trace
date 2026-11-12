@@ -1,0 +1,74 @@
+/* Trace design tokens. Strictly black, white and grey.
+   Meaning comes from fill and weight: solid black = phishing, grey = suspicious, outline = safe. */
+
+:root {
+  color-scheme: light dark;
+
+  --font-sans: "Inter Variable", system-ui, -apple-system, sans-serif;
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --t-2xs: 0.6875rem;
+  --t-xs: 0.75rem;
+  --t-sm: 0.8125rem;
+  --t-md: 0.875rem;
+  --t-base: 1rem;
+  --t-lg: 1.125rem;
+  --t-xl: 1.5rem;
+  --t-2xl: 2rem;
+  --t-3xl: 2.75rem;
+  --t-4xl: 4rem;
+
+  --r-xs: 6px;
+  --r-sm: 8px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --bg: light-dark(#ffffff, #0a0a0a);
+  --surface: light-dark(#ffffff, #121212);
+  --surface-2: light-dark(#fafafa, #171717);
+  --surface-3: light-dark(#f1f1f1, #222222);
+  --line: light-dark(#ececec, #242424);
+  --line-strong: light-dark(#dcdcdc, #363636);
+  --text: light-dark(#111111, #f4f4f4);
+  --text-2: light-dark(#5c5c5c, #a6a6a6);
+  --text-3: light-dark(#757575, #8c8c8c);
+  --mid: light-dark(#8e8e8e, #7c7c7c);
+  --mark: light-dark(#e2e2e2, #3a3a3a);
+  --danger: light-dark(#b3382c, #e5877c); /* the one colour in the UI: destructive actions only */
+  --danger-soft: light-dark(#fbeeec, #2c1a18);
+
+  --shadow-pop: 0 0 0 1px light-dark(rgb(0 0 0 / 0.04), rgb(255 255 255 / 0.07)), 0 16px 48px -12px light-dark(rgb(0 0 0 / 0.18), rgb(0 0 0 / 0.7));
+  --scrim: light-dark(rgb(0 0 0 / 0.24), rgb(0 0 0 / 0.64));
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* --tone: text/icon. --tone-fill / --tone-on: badge or mark. --tone-bar: charts. */
+[data-tone="danger"] {
+  --tone: var(--text);
+  --tone-fill: var(--text);
+  --tone-on: var(--bg);
+  --tone-bar: var(--text);
+}
+[data-tone="warn"] {
+  --tone: var(--text-2);
+  --tone-fill: var(--mark);
+  --tone-on: var(--text);
+  --tone-bar: var(--mid);
+}
+[data-tone="trust"],
+[data-tone="neutral"],
+[data-tone="info"] {
+  --tone: var(--text-3);
+  --tone-fill: transparent;
+  --tone-on: var(--text-2);
+  --tone-bar: var(--line-strong);
+}

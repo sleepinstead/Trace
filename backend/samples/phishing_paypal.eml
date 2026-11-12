@@ -1,0 +1,35 @@
+Return-Path: <bounce@mailer-x7.top>
+Received: from mailer-x7.top (unknown [185.234.72.19])
+	by mx.example.com with ESMTP id 4F2A1C0
+	for <jordan@example.com>; Tue, 3 Nov 2026 08:14:02 +0000
+Authentication-Results: mx.example.com;
+	spf=softfail smtp.mailfrom=mailer-x7.top;
+	dkim=none;
+	dmarc=fail (p=REJECT) header.from=paypal.com
+From: "PayPal Security" <service@paypal-account-review.com>
+Reply-To: resolution-team@gmail.com
+To: jordan@example.com
+Subject: Urgent: Your account has been limited - action required
+Date: Tue, 3 Nov 2026 08:13:55 +0000
+Message-ID: <20261103081355.4821@mailer-x7.top>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BOUNDARY1"
+
+--BOUNDARY1
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Dear Customer,</p>
+<p>We detected unusual activity on your PayPal account. Your account has been limited and will be suspended within 24 hours unless you verify your account.</p>
+<p>Please <a href="http://paypal.com.account-verify.xyz/webscr/login.php?email=jordan%40example.com">https://www.paypal.com/myaccount/verify</a> to confirm your identity and update your payment information.</p>
+<p>Failure to act immediately will result in permanent closure.</p>
+<p>Thank you,<br>PayPal Security Team</p>
+</body></html>
+
+--BOUNDARY1
+Content-Type: application/octet-stream; name="Account_Statement.pdf.html"
+Content-Disposition: attachment; filename="Account_Statement.pdf.html"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGZvcm0gYWN0aW9uPSJodHRwOi8vZXZpbC5leGFtcGxlL2NvbGxlY3QiPjwvZm9ybT48L2h0bWw+
+--BOUNDARY1--

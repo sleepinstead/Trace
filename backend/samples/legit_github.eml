@@ -1,0 +1,24 @@
+Return-Path: <noreply@github.com>
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@github.com header.s=pf2023 header.b=abc123;
+       spf=pass (google.com: domain of noreply@github.com designates 192.30.252.201 as permitted sender) smtp.mailfrom=noreply@github.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=github.com
+From: GitHub <noreply@github.com>
+To: jordan@example.com
+Subject: [GitHub] A third-party OAuth application has been added to your account
+Date: Mon, 2 Nov 2026 17:02:11 -0800
+Message-ID: <6543210.abcdef@github.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hey jordan!
+
+A third-party OAuth application (Linear) with read:user and repo scopes was recently authorized to access your account.
+Visit https://github.com/settings/connections/applications/0123abcd for more information.
+
+To see this and other security events for your account, visit https://github.com/settings/security-log
+
+If you run into problems, please contact support by visiting https://github.com/contact
+
+Thanks,
+The GitHub Team
