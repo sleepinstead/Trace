@@ -2,7 +2,7 @@
 
 Trace helps you check if a link, a domain or an email is a phishing attempt. Paste something suspicious and Trace takes it apart. It shows you what looks wrong, where it really leads, and why it got its score.
 
-![Trace result page](images/result.webp)
+![Trace result page](images/result.png)
 <!-- Replace docs/images/result.png with a screenshot of a scan result -->
 
 ## What it does
@@ -15,7 +15,7 @@ Trace helps you check if a link, a domain or an email is a phishing attempt. Pas
 - **Checks known threats.** It uses your own blocklist. It can also use VirusTotal, Google Safe Browsing, URLhaus and PhishTank if you add their keys.
 - **Keeps a history.** Every scan is saved on your computer.
 
-![Trace scan page](images/scan.webp)
+![Trace scan page](images/scan.png)
 <!-- Replace docs/images/scan.png with a screenshot of the scan page -->
 
 ## Built with
