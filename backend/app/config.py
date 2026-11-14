@@ -17,7 +17,7 @@ class Settings(BaseSettings):
 
     database_path: Path = BASE_DIR / "data" / "trace.sqlite"
     model_dir: Path = BASE_DIR / "app" / "ml" / "artifacts"
-    cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    cors_origins: list[str] = ["http://localhost:47613", "http://127.0.0.1:47613"]
 
     # Active network analysis
     http_timeout: float = 8.0

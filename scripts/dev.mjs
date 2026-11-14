@@ -105,7 +105,7 @@ async function announceWhenReady(port) {
 }
 
 async function dev() {
-  const apiPort = await freePort(Number(process.env.TRACE_API_PORT) || 8000);
+  const apiPort = await freePort(Number(process.env.TRACE_API_PORT) || 47614);
   log(`Starting the scanner on port ${apiPort}. The first start also trains the URL model (about 15 seconds).`);
 
   const children = [

@@ -36,7 +36,7 @@ Then open the project folder in a terminal and run:
 npm run dev
 ```
 
-That one command does everything. The first run installs the packages and trains the model, so give it a minute or two. After that it starts in seconds. Open the address it prints, usually http://localhost:5173.
+That one command does everything. The first run installs the packages and trains the model, so give it a minute or two. After that it starts in seconds. Open the address it prints, usually http://localhost:47613.
 
 ## Using Trace
 
